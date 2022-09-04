@@ -14,3 +14,7 @@
 ## めも
 https://go.dev/doc/tutorial/add-a-test
 
+
+## パッケージをインストール　
+go get . 
+

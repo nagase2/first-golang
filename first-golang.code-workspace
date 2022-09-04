@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"path": "greetings"
+	},
+	{
+		"path": "web-service-gin"
+	}
+],
+  "settings": {}
+}
