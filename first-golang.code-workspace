@@ -1,11 +1,17 @@
 {
   "folders": [
-	{
-		"path": "greetings"
-	},
-	{
-		"path": "web-service-gin"
-	}
-],
+    {
+      "path": "greetings"
+    },
+    {
+      "path": "web-service-gin"
+    },
+    {
+      "path": "hello"
+    },
+    {
+      "path": "echoApp"
+    }
+  ],
   "settings": {}
 }

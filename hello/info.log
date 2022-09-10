@@ -1,0 +1,62 @@
+time="2022-09-07T15:09:53+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=xxx channel_id=xxx client_id=xxx device_id=xxx record_ts=xxx role=xxx timestamp=xxx
+time="2022-09-07T15:09:53+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:09:53+09:00" level=fatal msg="The ice breaks!" number=100 omg=true
+time="2022-09-07T15:09:58+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=xxx channel_id=xxx client_id=xxx device_id=xxx record_ts=sss role=xxx timestamp=dddd
+time="2022-09-07T15:09:58+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:09:58+09:00" level=fatal msg="The ice breaks!" number=100 omg=true
+time="2022-09-07T15:10:09+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=xxx channel_id=xxx client_id=xxx device_id=xxx record_ts=sss role=xxx timestamp=dddd
+time="2022-09-07T15:10:18+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=ssss client_id=sss device_id=ddddddd record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:10:27+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=ssss client_id=33333 device_id=ddddddd record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:10:31+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:26:58+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:27:18+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:27:24+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:27:26+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:27:28+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:27:33+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:50:19+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:50:30+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:50:34+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:50:34+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:51:03+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=ddd timestamp=dddd
+time="2022-09-07T15:51:03+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:51:05+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:51:05+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:51:48+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:51:48+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:51:53+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:51:53+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:51:57+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:51:57+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:51:59+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:51:59+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:52:17+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:52:17+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:53:52+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:53:52+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:54:22+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:54:22+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:54:44+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:54:44+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:54:52+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:54:52+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:54:59+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:54:59+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:55:15+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:55:15+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:56:52+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:56:52+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:58:57+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:58:57+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:59:07+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:59:07+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T15:59:10+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T15:59:10+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T16:07:47+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T16:07:47+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T16:07:51+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T16:07:51+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T16:09:16+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T16:09:16+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true
+time="2022-09-07T16:09:17+09:00" level=info msg="A group of walrus emerges from the ocean" channel_connections=dddd channel_id=cccccc client_id=33333 device_id=sssssss record_ts=sss role=xxxx timestamp=dddd
+time="2022-09-07T16:09:17+09:00" level=warning msg="The group's number increased tremendously!" number=122 omg=true

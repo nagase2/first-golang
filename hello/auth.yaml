@@ -1,0 +1,10 @@
+authentication:
+  - channel_id : remote1
+    signaling_key : aa23ss
+    device_id : 
+      - remote-dev1
+  - channel_id : remote2
+    signaling_key : a134dss
+    device_id : 
+      - remote-dev1
+      - remote-dev2
