@@ -80,7 +80,7 @@ func TestAssertion2(t *testing.T) {
 		assert := assert.New(t)
 
 		// JSONが同じかどうか検証
-		assert.JSONEq(`[{"aa": "dd" } ] `, `[{"aa": "ddx"}]`)
+		assert.JSONEq(`[{"aa": "dd" } ] `, `[{"aa": "dd"}]`)
 
 		//assert.ObjectsAreEqualValues(obj, obj2, "The two words should be the same.")
 	})

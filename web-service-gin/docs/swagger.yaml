@@ -1,17 +1,12 @@
 basePath: /api/v1
-host: localhost:8080
 info:
   contact:
     email: support@swagger.io
-    name: API Supportaaaaaa
+    name: API Support
     url: http://www.swagger.io/support
-  description: This is a sssssssssssssss
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-  termsOfService: http://swagger.io/terms/
-  title: AAAAA Swagger Example API
-  version: "1.0"
 paths:
   /example/helloworld:
     get:
@@ -25,10 +20,7 @@ paths:
           description: OK
           schema:
             type: string
-      summary: ping example
+      summary: ping exampleああああ
       tags:
       - example
-securityDefinitions:
-  BasicAuth:
-    type: basic
 swagger: "2.0"

@@ -8,8 +8,17 @@ import (
 )
 
 func GetSimpleString(c *gin.Context) {
-	println("🌟")
-	fmt.Println("🐮")
+	println("🌟..")
+
+	fmt.Println("🐮///")
+	c.IndentedJSON(http.StatusOK, "albums")
+
+}
+
+func GetSimpleString2(c *gin.Context) {
+	println("🌟..")
+
+	fmt.Println("🐮///")
 	c.IndentedJSON(http.StatusOK, "albums")
 
 }
