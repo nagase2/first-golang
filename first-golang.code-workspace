@@ -11,6 +11,12 @@
     },
     {
       "path": "echoApp"
+    },
+    {
+      "path": "map_sample"
+    },
+    {
+      "path": "interface_sample"
     }
   ],
   "settings": {}

@@ -54,8 +54,7 @@ func str2time(t string) time.Time {
 	return parsedTime
 }
 
-func main() {
-
+func logWriter() {
 	//yamlを読み込むサンプル
 	authConfig := readAuthYaml()
 	fmt.Print(authConfig)
@@ -110,5 +109,66 @@ func main() {
 		"omg":    true,
 		"number": 122,
 	}).Warn("🐩🐩🐩🐩🐩🐩🐩🐩")
+}
+
+
+
+// Controller example
+type DeliveryService struct {
+	Name string
+	Num  int
+}
+
+// 受信
+func (t *DeliveryService) Receive() string {
+	fmt.Println("aaaccccc")
+	return "received"
+}
+
+// 受信
+func (t *DeliveryService) Send() string {
+	fmt.Println("send")
+	return "sent"
+}
+func (t *DeliveryService) addAndGet(headString string) int {
+	t.Num = t.Num + 1
+	fmt.Println(headString, t.Num)
+	return t.Num
+}
+
+// これがインスタンスを生成するメソッドの役割をする
+func NewThing(someParameter string, startNum int) *DeliveryService {
+	p := new(DeliveryService)
+	p.Name = someParameter
+	p.Num = startNum
+	return p
+}
+
+func main() {
+	fmt.Println("Start!!!!")
+	thing := NewThing("waw", 100)
+	fmt.Println("🐔", thing.Name)
+	thing.addAndGet("🐸")
+	thing.addAndGet("🐸")
+
+	thingPointer := *thing
+	thingPointer.addAndGet("🐮")
+	thingPointer.addAndGet("🐮")
+
+	thing.addAndGet("🐸")
+	thing.addAndGet("🐸")
+
+	thing2 := NewThing("🍑waw", 1000)
+	fmt.Println("🍑", thing2.Name)
+	thing2.addAndGet("🍑")
+	thing2.addAndGet("🍑")
+
+	var x DeliveryService
+	fmt.Println("🏠", x.Name)
+	x.Receive()
+	x.Send()
+	x.addAndGet("🐵")
+	x.addAndGet("🐵")
+	x.addAndGet("🐵")
 
 }

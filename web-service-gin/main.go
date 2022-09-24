@@ -87,14 +87,12 @@ func SetupRouter() *gin.Engine {
 		c.String(http.StatusOK, "pong")
 	})
 	router.GET("/simple/:id", sub.GetSimpleString)
-	//router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 	return router
 }
 
 // @contact.name   API Support
 // @contact.url    http://www.swagger.io/support
 // @contact.email  support@swagger.io
-
 // @license.name  Apache 2.0
 // @license.url   http://www.apache.org/licenses/LICENSE-2.0.html
 func main() {
@@ -107,8 +105,7 @@ func main() {
 	docs.SwaggerInfo.BasePath = "/"
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
 
-	r := gin.New()
-
+	r := SetupRouter()
 	// use ginSwagger middleware to serve the API docs
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
