@@ -21,8 +21,8 @@ func init() {
 	time.Sleep(time.Millisecond * 500)
 
 	// mysql
-	//dsn := "docker:docker@tcp(127.0.0.1:9306)/gorm_test?charset=utf8mb4&parseTime=True&loc=Local"
-	dsn := "docker:docker@tcp(mysql_db:3306)/gorm_test?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "docker:docker@tcp(127.0.0.1:9306)/gorm_test?charset=utf8mb4&parseTime=True&loc=Local"
+	//dsn := "docker:docker@tcp(mysql_db:3306)/gorm_test?charset=utf8mb4&parseTime=True&loc=Local"
 	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
 		// Globally
 		//Logger: newLogger,

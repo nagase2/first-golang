@@ -12,6 +12,6 @@ COPY . .
 RUN go build -v -o /usr/local/bin/app 
 
 # デバッグモード
-CMD ["app","--debug"]
+CMD ["app","--debug","--reset"]
 # release mode
 # CMD ["app"]
