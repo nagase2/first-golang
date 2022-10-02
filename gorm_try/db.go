@@ -16,9 +16,9 @@ var DB *gorm.DB
 
 func init() {
 	var err error
-	fmt.Println("🌟initです！🌟")
+	fmt.Println("🌟initです！DB接続のため、一秒待機します。🌟")
 	// Dockerから接続できるようにWaitする
-	time.Sleep(time.Second * 1)
+	time.Sleep(time.Millisecond * 500)
 
 	// mysql
 	//dsn := "docker:docker@tcp(127.0.0.1:9306)/gorm_test?charset=utf8mb4&parseTime=True&loc=Local"
@@ -30,7 +30,7 @@ func init() {
 	// DB接続失敗したときは５秒後に再度トライ
 	if err != nil {
 		log.Fatal("🔒open error:", err)
-		time.Sleep(time.Second * 3)
+		time.Sleep(time.Second * 5)
 		fmt.Println("🌟再接続を行います")
 		DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 		if err != nil {
