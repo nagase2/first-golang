@@ -4,19 +4,13 @@
       "path": "greetings"
     },
     {
-      "path": "web-service-gin"
-    },
-    {
-      "path": "hello"
-    },
-    {
       "path": "echoApp"
     },
     {
       "path": "map_sample"
     },
     {
-      "path": "interface_sample"
+      "path": "gorm_try"
     }
   ],
   "settings": {}

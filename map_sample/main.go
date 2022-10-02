@@ -87,10 +87,11 @@ func main() {
 	boolPtr := flag.Bool("fork", false, "a bool")
 	debugPtr := flag.Bool("debug", false, "debug flag. if  it's true")
 	flag.Parse()
+	fmt.Println("isDebug:", *debugPtr)
 
+	//os.Stdout = nil    // turn it off
 	fmt.Println("word:", *wordPtr)
 	fmt.Println("fork:", *boolPtr)
-	fmt.Println("isDebug:", *debugPtr)
 }
 
 func test1() {

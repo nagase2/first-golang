@@ -1,0 +1,37 @@
+version: "3.8"
+volumes:
+  mysql_vol1:
+    driver: "local"
+services:
+  ugo-core-auth:
+    # environment:
+    # - NODE_ENV=development
+    build:
+      # args:
+      #   REACT_APP_ENV: development
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8081" #左が公開ポート、右がコンテナのポート
+    # volumes:
+    #   - node_modules:/dist/node_modules
+    links:
+      - mysql_db
+  mysql_db:
+    image: mysql/mysql-server:8.0.24
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gorm_test
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: docker
+      TZ: "Asia/Tokyo"
+      LANG: ja_JP.UTF-8
+    command: >
+      mysqld --character-set-server=utf8mb4
+              --collation-server=utf8mb4_unicode_ci
+              --default-authentication-plugin=mysql_native_password
+    volumes:
+      - mysql_vol1:/var/lib/mysql
+    ports:
+      - 9306:3306
