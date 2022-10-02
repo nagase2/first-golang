@@ -11,4 +11,5 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.15 // indirect
 	gorm.io/driver/sqlite v1.3.6 // indirect
 	gorm.io/gorm v1.23.10 // indirect
+	gorm.io/plugin/soft_delete v1.2.0
 )

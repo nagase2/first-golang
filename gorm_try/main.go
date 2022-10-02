@@ -78,6 +78,40 @@ func main() {
 	var users []User
 	DB.Find(&users)
 
+	user1 := User{
+		Name: "jinzhu",
+		Languages: []Language{
+			{Name: "ZH"},
+			{Name: "EN"},
+			{Name: "TK"},
+		},
+		Company: Company{Name: "北海道電力"},
+	}
+	user2 := User{
+		Name: "田中　ひろたか",
+		Languages: []Language{
+			{Name: "JP"},
+			{Name: "IN"},
+		},
+		Company: Company{Name: "中部電力"},
+	}
+	DB.Create(&user1)
+	DB.Create(&user2)
+
+	// UpSeart（なんで？）
+	lang1 := Language{
+		Code: "FN",
+		Name: "フランス"}
+	DB.Create(&lang1)
+	lang2 := Language{
+		Code: "FNA",
+		Name: "AAA"}
+	DB.Create(&lang2)
+	fmt.Println("Language削除します")
+	DB.Delete(&lang1)
+
+	fmt.Println("ユーザ削除します")
+	// DB.Delete(&user)
 	// var product2 Product
 	// tx.First(&product2{}, 1)
 	// DB.Model(&product2{Code: "42"}).Update("Price", 11200)
@@ -97,8 +131,34 @@ func main() {
 		fmt.Println("🐵", index, result.ID, result.Name)
 	}
 
+	// こうすれば受け取るかたちのStructを作らなくても結果を受け取れる
+	mapResult := map[string]interface{}{}
+	DB.Model(&User{}).First(&mapResult, "id = ?", 1)
+
+	fmt.Println("😸", mapResult["name"], mapResult["age"])
+
+	// JOINしてデータをとってくる
+	type result1 struct {
+		Name        string
+		CompanyName string
+	}
+	DB.Model(&User{}).Select("users.name, companies.name").Joins("left join companies on  users.company_id=companies.id").Scan(&result1{})
+	fmt.Println()
+	// SELECT users.name, emails.email FROM `users` left join emails on emails.user_id = users.id
+
+	// ORMの機能で、フランス語がはなせるUserを検索する
+
 	// 取得したデータを全て出力
 	// for index, user := range users {
 	// 	fmt.Println(index, user.Name)
 	// }
+}
+
+
+func (u *Language) BeforeDelete(tx *gorm.DB) (err error) {
+	fmt.Print("🌟🌟🌟RoleCheck（ダミー）🌟🌟🌟", u)
+	//   if u.Role == "admin" {
+	//     return errors.New("admin user not allowed to delete")
+	//   }
+	return
 }

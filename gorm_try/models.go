@@ -55,8 +55,11 @@ type Company struct {
 }
 
 type Language struct {
-	Code string `gorm:"primarykey"`
-	Name string
+	Code      string `gorm:"primarykey"`
+	Name      string 
+	CreatedAt time.Time
+	UpdatedAt time.Time
+	DeletedAt gorm.DeletedAt `gorm:"index"`
 }
 
 // ------------------

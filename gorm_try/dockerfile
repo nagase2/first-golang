@@ -7,8 +7,8 @@ COPY go.mod go.sum ./
 RUN go mod download && go mod verify
 
 COPY . .
-RUN go install github.com/swaggo/swag/cmd/swag@latest && swag init
-RUN go test
+#　RUN go install github.com/swaggo/swag/cmd/swag@latest && swag init
+# RUN go test
 RUN go build -v -o /usr/local/bin/app 
 
 # デバッグモード

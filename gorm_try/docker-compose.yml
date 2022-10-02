@@ -19,7 +19,8 @@ services:
       - mysql_db
   mysql_db:
     image: mysql/mysql-server:8.0.24
-    restart: unless-stopped
+    #restart: unless-stopped
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: gorm_test
