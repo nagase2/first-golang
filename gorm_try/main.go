@@ -154,7 +154,6 @@ func main() {
 	// }
 }
 
-
 func (u *Language) BeforeDelete(tx *gorm.DB) (err error) {
 	fmt.Print("🌟🌟🌟RoleCheck（ダミー）🌟🌟🌟", u)
 	//   if u.Role == "admin" {

@@ -11,6 +11,9 @@
     },
     {
       "path": "gorm_try"
+    },
+    {
+      "path": "gomock_try"
     }
   ],
   "settings": {}
