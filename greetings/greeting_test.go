@@ -1,6 +1,7 @@
 package greetings
 
 import (
+	"fmt"
 	"regexp"
 	"testing"
 )
@@ -16,7 +17,6 @@ func TestHelloName(t *testing.T) {
 	}
 }
 
-
 // TestHelloEmpty calls greetings.Hello with an empty string,
 // checking for an error.
 func TestHelloEmpty(t *testing.T) {
@@ -26,5 +26,22 @@ func TestHelloEmpty(t *testing.T) {
 	}
 }
 
+func TestHelloEmpty2(t *testing.T) {
+	val := []string{"Japan", "Australia", "Germany"}
+	msg, err := Hellos(val)
+	if err != nil {
+		t.Fatalf(`Hello("") = %q, %v, want "", error`, msg, err)
+	}
+	fmt.Println("🌟", msg)
+}
 
+func TestHelloEmpty3(t *testing.T) {
+	val := []string{"Japan", "Australia", ""}
+	msg, err := Hellos(val)
+	if err != nil {
 
+	} else {
+		t.Fatalf(`Hello("") = %q, %v, want "", error`, msg, err)
+	}
+	fmt.Println("🌟", msg)
+}

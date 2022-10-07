@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"nagase/mock/match"
 	"nagase/mock/mocks"
+
 	"nagase/mock/user"
 
 	"testing"
@@ -13,6 +14,7 @@ import (
 )
 
 func TestUse(t *testing.T) {
+	fmt.Println("xxxxxxxxxxxxxx")
 	mockCtrl := gomock.NewController(t)
 	defer mockCtrl.Finish()
 
@@ -20,7 +22,7 @@ func TestUse(t *testing.T) {
 	testUser := &user.User{Doer: mockDoer}
 
 	// Expect Do to be called once with 123 and "Hello GoMock" as parameters, and return nil from the mocked call.
-	mockDoer.EXPECT().DoSomething(123, "Hello GoMock").Return(nil).Times(1)
+	mockDoer.EXPECT().DoSomething(123, "Hello GoMock").Return("a", nil).Times(1)
 
 	testUser.Use()
 }
@@ -34,9 +36,11 @@ func TestUseReturnsErrorFromDo(t *testing.T) {
 	testUser := &user.User{Doer: mockDoer}
 
 	// Expect Do to be called once with 123 and "Hello GoMock" as parameters, and return dummyError from the mocked call.
-	mockDoer.EXPECT().DoSomething(123, "Hello GoMock").Return(dummyError).Times(1)
+	mockDoer.EXPECT().DoSomething(123, "Hello GoMock").Return("zz", dummyError).Times(1)
 
-	err := testUser.Use()
+	result, err := testUser.Use()
+	fmt.Println("🐮", result)
+	fmt.Println("🐮", err)
 
 	if err != dummyError {
 		t.Fail()
@@ -64,7 +68,7 @@ func TestUseMatchersExample2(t *testing.T) {
 
 	mockDoer.EXPECT().
 		DoSomething(123, match.OfType("string")).
-		Return(nil).
+		Return("ssss", nil).
 		Times(1)
 
 	testUser.Use()
@@ -112,14 +116,14 @@ func TestUseActionExamples(t *testing.T) {
 
 	mockDoer.EXPECT().
 		DoSomething(gomock.Any(), gomock.Any()).
-		Return(nil).
+		Return("", nil).
 		Do(func(x int, y string) {
 			fmt.Println("Called with x =", x, "and y =", y)
 		})
 
 	mockDoer.EXPECT().
 		DoSomething(gomock.Any(), gomock.Any()).
-		Return(nil).
+		Return("", nil).
 		Do(func(x int, y string) {
 			if x > len(y) {
 				t.Fail()
