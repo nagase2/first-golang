@@ -13,7 +13,7 @@
 <img width="102" alt="image" src="./doc.drawio.svg">
 
 ![Alt text](doc.drawio.svg?raw=true "Title")
-![Test Image 1](doc.drawio.svg)
+![Test Image 1](doc.drawio.png)
 
 
 
