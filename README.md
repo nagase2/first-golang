@@ -12,6 +12,8 @@
 
 <img width="102" alt="image" src="./doc.drawio.svg">
 
+![Alt text](doc.drawio.svg?raw=true "Title")
+
 
 
 ## めも
