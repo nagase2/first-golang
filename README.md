@@ -10,10 +10,10 @@
 
 [https://echo.labstack.com/](https://echo.labstack.com/)
 
-<img width="102" alt="image" src="./doc.drawio.png">
+<img width="102" alt="image" src="./xxx.drawio.svg">
 
 ### イメージ１
-![Alt text](doc.drawio.png?raw=true "Title")
+![Alt text](xxx.drawio.svg?raw=true "Title")
 
 
 
@@ -24,7 +24,7 @@ https://go.dev/doc/tutorial/add-a-test
 
 
 ### イメージ２
-![Test Image 1](doc.drawio.png)
+![Test Image 1](xxx.drawio.svg)
 
 
 
