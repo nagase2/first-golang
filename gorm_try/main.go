@@ -20,7 +20,7 @@ import (
 
 func main() {
 	fmt.Println("Hello, world.2")
-	newLogger := logger.New(
+	dbLogger := logger.New(
 		log.New(os.Stdout, "\r\n", log.LstdFlags), // io writer
 		logger.Config{
 			SlowThreshold: time.Second, // Slow SQL threshold
@@ -63,20 +63,14 @@ func main() {
 	DB.Migrator().CreateIndex(&User{}, "idx_name")
 
 	DB.Create(&User{
-		Name: "testuser1",
+		Name: "nagase",
+		Age: 44,
 		//CreditCards: [&CreditCard{Number: "411111111111"}]
 	})
 	DB.Create(&User{
 		Name: "22222",
 		//CreditCards: [&CreditCard{Number: "411111111111"}]
 	})
-
-	// Continuous session mode
-	tx := DB.Session(&gorm.Session{Logger: newLogger})
-	tx.First(&User{}, 1)
-
-	var users []User
-	DB.Find(&users)
 
 	user1 := User{
 		Name: "jinzhu",
@@ -97,6 +91,21 @@ func main() {
 	}
 	DB.Create(&user1)
 	DB.Create(&user2)
+
+	userArray1 := []User{}
+	// Continuous session mode
+	tx := DB.Session(&gorm.Session{Logger: dbLogger})
+	tx.First(&userArray1, 1)
+	fmt.Println("🗻", userArray1[0].Name)
+
+	userArray2 := []User{}
+	tx.Where(&User{Name: "nagase", Age: 44}).Find(&userArray2)
+	for _, data := range userArray2 {
+		fmt.Println("🐷", data.Name)
+	}
+
+	var users []User
+	DB.Find(&users)
 
 	// UpSeart（なんで？）
 	lang1 := Language{
@@ -121,11 +130,11 @@ func main() {
 		Name string
 		Age  int
 	}
-	// raw SQLで検索
+	// raw SQLで検索。結果をStructに入れて受け取る
 	var results []Result
 	//DB.Raw("SELECT id, name, age FROM users WHERE age > ?", 20).Scan(&results)
 	DB.Raw("SELECT * FROM users WHERE (name = @name AND age > @age)",
-		map[string]interface{}{"name": "test", "age": 11}).Find(&results)
+		map[string]interface{}{"name": "test", "age": 44}).Find(&results)
 
 	for index, result := range results {
 		fmt.Println("🐵", index, result.ID, result.Name)
@@ -152,6 +161,8 @@ func main() {
 	// for index, user := range users {
 	// 	fmt.Println(index, user.Name)
 	// }
+
+	fmt.Println("🈲END🈲")
 }
 
 func (u *Language) BeforeDelete(tx *gorm.DB) (err error) {

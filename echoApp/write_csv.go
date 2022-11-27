@@ -9,8 +9,7 @@ import (
 	"time"
 )
 
-
-func main() {
+func __main() {
 	//・・fmt.Println("🌟", aaa)
 	header := [][]string{
 		//ヘッダ行
