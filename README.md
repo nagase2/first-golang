@@ -10,9 +10,9 @@
 
 [https://echo.labstack.com/](https://echo.labstack.com/)
 
-<img width="102" alt="image" src="./doc.drawio.svg">
+<img width="102" alt="image" src="./doc.drawio.png">
 
-![Alt text](doc.drawio.svg?raw=true "Title")
+![Alt text](doc.drawio.png?raw=true "Title")
 ![Test Image 1](doc.drawio.png)
 
 
